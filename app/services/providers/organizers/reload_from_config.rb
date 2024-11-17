@@ -5,7 +5,6 @@ module Providers
 
       organize ::Providers::DeleteAll,
         ::Providers::LoadFromConfig
-
     end
   end
 end

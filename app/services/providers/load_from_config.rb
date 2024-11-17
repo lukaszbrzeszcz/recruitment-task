@@ -14,7 +14,7 @@ module Providers
     private
 
     def provider_topics
-      json['provider_topics']
+      json["provider_topics"]
     end
 
     def json
@@ -26,7 +26,7 @@ module Providers
     end
 
     def config_path
-      Rails.root.join('config', 'providers.json')
+      Rails.root.join("config", "providers.json")
     end
   end
 end

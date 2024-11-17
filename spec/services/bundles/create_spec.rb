@@ -28,8 +28,8 @@ RSpec.describe Bundles::Create do
     it "returns a hash with the quotes for the providers" do
       expect(subject.quotes).to eq(
         {
-          "provider_a" => 8.0, # 10% * (50 + 30) = 8.0 
-          "provider_b" => 5.0, # 10% * (20 + 30) = 5.0 
+          "provider_a" => 8.0, # 10% * (50 + 30) = 8.0
+          "provider_b" => 5.0, # 10% * (20 + 30) = 5.0
           "provider_c" => 10.0 # 20% * 50 = 10.0
         }
       )

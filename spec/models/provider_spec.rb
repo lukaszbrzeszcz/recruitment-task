@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe Provider, type: :model do
   describe "scopes" do
     describe ".by_topics" do
-
       let(:provider_a) { build(:provider, name: "provider_a", topics: "math+science") }
       let(:provider_b) { build(:provider, name: "provider_b", topics: "reading+science") }
       let(:provider_c) { build(:provider, name: "provider_c", topics: "history+math") }
