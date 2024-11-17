@@ -1,5 +1,5 @@
 class Provider < ApplicationRecord
   scope :by_topics, ->(topics) {
-    where("topics ILIKE '%#{topics.join("%' OR topics ILIKE '%")}%'")
+    where(Arel.sql("topics ILIKE '%#{topics.join("%' OR topics ILIKE '%")}%'"))
   }
 end
