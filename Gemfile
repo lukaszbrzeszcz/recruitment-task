@@ -44,12 +44,18 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "factory_bot_rails", "~> 6.4"
 end
 
-
+group :test do
+  gem "database_cleaner-active_record", "~> 2.2"
+end
 
 gem "rspec-rails", "~> 7.1"
 
 gem "interactor", "~> 3.1"
 
 gem "activerecord-import", "~> 1.8"
+
+gem "pry", "~> 0.15.0"
