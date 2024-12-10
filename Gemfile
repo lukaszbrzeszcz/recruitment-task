@@ -56,6 +56,6 @@ gem "rspec-rails", "~> 7.1"
 
 gem "interactor", "~> 3.1"
 
-gem "activerecord-import", "~> 1.8"
+gem "activerecord-import", "~> 2.0"
 
 gem "pry", "~> 0.15.0"
